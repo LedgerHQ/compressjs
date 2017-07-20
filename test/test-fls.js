@@ -1,6 +1,6 @@
 /* quick test for Util.fls(), since I added a new "fast" implementation. */
 var assert = require("assert");
-var Util = require('../lib/Util');
+var Util = require('../src/lib/Util');
 
 var slowFLS = function(n) {
     var bits = 0;

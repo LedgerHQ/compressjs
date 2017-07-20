@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 var program = require('commander');
-var compressjs = require('../');
+var compressjs = require('../src/main');
 var fs = require('fs');
 
 program

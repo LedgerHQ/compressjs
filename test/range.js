@@ -1,7 +1,7 @@
 /* Range Coder tests */
 var assert = require("assert");
-var compressjs = require('../');
-var Util = require('../lib/Util');
+var compressjs = require('../src/main');
+var Util = require('../src/lib/Util');
 
 describe('basic range coder operation', function() {
     var buffer = Util.makeU8Buffer(8);

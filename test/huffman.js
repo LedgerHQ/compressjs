@@ -1,6 +1,6 @@
 /* Test of huffman allocator, borrowed from jbzip2. */
 var assert = require("assert");
-var HuffmanAllocator = require("../lib/HuffmanAllocator");
+var HuffmanAllocator = require("../src/lib/HuffmanAllocator");
 
 /**
  * Fibonacci sequence

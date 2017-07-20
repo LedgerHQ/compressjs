@@ -1,5 +1,5 @@
 var assert = require("assert");
-var Bzip2 = require('../').Bzip2;
+var Bzip2 = require('../src/lib/Bzip2');
 var fs = require('fs');
 
 describe('bzip2 table indexing', function(){

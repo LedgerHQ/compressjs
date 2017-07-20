@@ -4,8 +4,8 @@
  */
 var assert = require('assert');
 var fs = require('fs');
-var BWT = require('../').BWT;
-var Util = require('../lib/Util');
+var BWT = require('../src/lib/BWT');
+var Util = require('../src/lib/Util');
 
 var testFile = function(filename, verbose) {
     var T = fs.readFileSync('test/'+filename+'.ref');

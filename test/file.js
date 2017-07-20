@@ -1,5 +1,5 @@
 var assert = require("assert");
-var compressjs = require('../');
+var compressjs = require('../src/main');
 var fs = require('fs');
 
 var testRoundTrip = function(cmp, level, filename) {

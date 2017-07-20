@@ -1,17 +1,24 @@
 {
-  "name": "compressjs",
-  "version": "1.1.0",
-  "author": "C. Scott Ananian",
+  "name": "@faithlife/compressjs",
+  "version": "1.2.0",
+  "author": "Faithlife Corporation",
+  "contributors": [
+    "C. Scott Ananian",
+    "Faithlife Corporation"
+  ],
   "description": "pure JavaScript de/compression (bzip2, etc) for node.js, volo, and the browser.",
   "keywords": [
     "bzip2",
     "compression",
     "decompression"
   ],
-  "main": "main",
+  "main": "dist/bundle",
+    "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/cscott/compressjs.git"
+    "url": "https://github.com/Faithlife/compressjs.git"
   },
   "license": "GPL",
   "bin": {
@@ -21,14 +28,16 @@
     "test": "test"
   },
   "dependencies": {
-    "amdefine": "~1.0.0",
     "commander": "~2.8.1"
   },
   "devDependencies": {
-    "mocha": "~2.2.5"
+    "mocha": "~2.2.5",
+    "rimraf": "^2.6.1",
+    "webpack": "^3.3.0"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "build": "rimraf dist && npm test && webpack --config webpack.config.js"
   },
   "amd": {},
   "volo": {}

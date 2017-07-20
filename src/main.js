@@ -19,7 +19,7 @@ const PPM = require('./lib/PPM');
 const Simple = require('./lib/Simple');
 
 module.exports = freeze({
-    version: "1.1.0",
+    version: "1.2.0",
     // APIs
     BitStream: BitStream,
     Stream: Stream,
