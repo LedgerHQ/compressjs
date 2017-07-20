@@ -12,9 +12,9 @@
     "compression",
     "decompression"
   ],
-  "main": "dist/bundle",
-    "files": [
-    "dist"
+  "main": "src/main.js",
+  "files": [
+    "src/"
   ],
   "repository": {
     "type": "git",
@@ -32,12 +32,11 @@
   },
   "devDependencies": {
     "mocha": "~2.2.5",
-    "rimraf": "^2.6.1",
-    "webpack": "^3.3.0"
+    "rimraf": "^2.6.1"
   },
   "scripts": {
     "test": "mocha",
-    "build": "rimraf dist && npm test && webpack --config webpack.config.js"
+    "build": "rimraf dist && npm test && npm build"
   },
   "amd": {},
   "volo": {}
