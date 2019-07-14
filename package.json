@@ -28,10 +28,10 @@
     "test": "test"
   },
   "dependencies": {
-    "commander": "~2.8.1"
+    "commander": "^2.20.0"
   },
   "devDependencies": {
-    "mocha": "~2.2.5",
+    "mocha": "^6.1.4",
     "rimraf": "^2.6.1"
   },
   "scripts": {
