@@ -15,7 +15,7 @@ var EOF = Stream.EOF;
 var F_PROB_MAX  = 0xFF00;
 var F_PROB_INCR = 0x0100;
 
-BWTC = Object.create(null);
+const BWTC = Object.create(null);
 BWTC.MAGIC = "bwtc";
 BWTC.compressFile = Util.compressFileHelper(BWTC.MAGIC, function(input, output, size, props, finalByte) {
     var encoder = new RangeCoder(output);
